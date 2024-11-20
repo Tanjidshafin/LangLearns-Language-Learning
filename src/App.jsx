@@ -7,7 +7,7 @@ import SignUp from './pages/SignUp';
 import StartLearning from './pages/StartLearning';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-
+import EachLesson from './pages/EachLesson';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,7 +20,7 @@ function App() {
         <Route path='/StartLearning' element={<StartLearning />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Signup' element={<SignUp />} />
-        
+        <Route path='/Lesson/:lessonNo' element={<EachLesson />} />
       </Routes>
       <Footer />
     </>

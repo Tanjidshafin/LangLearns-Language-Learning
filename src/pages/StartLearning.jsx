@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
+import { NavLink } from 'react-router-dom';
+import CountUp from 'react-countup';
 
 const StartLearning = () => {
   const { lessons } = useContext(AppContext);
@@ -86,58 +88,50 @@ const StartLearning = () => {
           <div
             className={`${
               langSelector === 'spanish' ? 'grid' : 'flex'
-            } grid-cols-1 md:grid-cols-2 justify-center lg:grid-cols-3 gap-5`}>
+            } grid-cols-2 md:grid-cols-2 justify-center lg:grid-cols-3 gap-5`}>
             {langSelector === 'spanish' ? (
               lessons.slice(0, 10).map((lesson) => (
-                <a
-                  href='#'
-                  className='relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8'>
+                <NavLink
+                  to={`/Lesson/${lesson.Lesson_no}`}
+                  className='relative shadow-lg block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8'>
                   <span className='absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></span>
 
                   <div className='sm:flex sm:justify-between sm:gap-4'>
                     <div>
-                      <h3 className='text-lg font-bold text-gray-900 sm:text-xl'>
-                        Building a SaaS product as a software developer
+                      <h3 className='font-bold  text-gray-900 sm:text-xl'>
+                        Lesson No: <span className=''>{lesson.Lesson_no}</span>
                       </h3>
-
-                      <p className='mt-1 text-xs font-medium text-gray-600'>
-                        By John Doe
-                      </p>
                     </div>
 
                     <div className='hidden sm:block sm:shrink-0'>
                       <img
                         alt=''
-                        src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
-                        className='size-16 rounded-lg object-cover shadow-sm'
+                        src='/Assets/Spanish Log.png'
+                        className='size-12 rounded-lg object-cover shadow-sm'
                       />
                     </div>
                   </div>
 
-                  <div className='mt-4'>
-                    <p className='text-pretty text-sm text-gray-500'>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      At velit illum provident a, ipsa maiores deleniti
-                      consectetur nobis et eaque.
-                    </p>
-                  </div>
-
-                  <dl className='mt-6 flex gap-4 sm:gap-6'>
-                    <div className='flex flex-col-reverse'>
+                  <dl className='mt-6 justify-between flex gap-4 sm:gap-6'>
+                    <div className=' hidden md:flex flex-col-reverse'>
                       <dt className='text-sm font-medium text-gray-600'>
-                        Published
+                        Vocabularies
                       </dt>
-                      <dd className='text-xs text-gray-500'>31st June, 2021</dd>
+                      <dd className='text-xs font-semibold text-center text-gray-500'>
+                        <CountUp enableScrollSpy={true} duration={5} end={10} />
+                      </dd>
                     </div>
 
                     <div className='flex flex-col-reverse'>
                       <dt className='text-sm font-medium text-gray-600'>
-                        Reading time
+                        Difficulty
                       </dt>
-                      <dd className='text-xs text-gray-500'>3 minute</dd>
+                      <dd className='text-xs text-center text-gray-500'>
+                        {lesson.difficulty}
+                      </dd>
                     </div>
                   </dl>
-                </a>
+                </NavLink>
               ))
             ) : (
               <div className='mt-10'>

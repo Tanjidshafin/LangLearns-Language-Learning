@@ -4,7 +4,7 @@ export const AppContext = createContext();
 const AppContextProvider = (props) => {
   const [lessons, setLessons] = useState([]);
   useEffect(() => {
-    fetch('/public/Words.json')
+    fetch('/Words.json')
       .then((res) => res.json())
       .then((data) => setLessons(data));
   }, []);
