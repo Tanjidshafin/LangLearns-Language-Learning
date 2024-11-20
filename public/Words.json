@@ -5,7 +5,7 @@
         "pronunciation": "oh-lah",
         "meaning": "hello",
         "part_of_speech": "interjection",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 1,
         "when_to_say": "when greeting someone",
         "example": "Hola, ¿cómo estás? (Hello, how are you?)"
@@ -16,7 +16,7 @@
         "pronunciation": "ah-dee-ohs",
         "meaning": "goodbye",
         "part_of_speech": "interjection",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "when parting ways",
         "example": "Adiós, nos vemos mañana. (Goodbye, see you tomorrow.)"
@@ -27,7 +27,7 @@
         "pronunciation": "por fah-vor",
         "meaning": "please",
         "part_of_speech": "phrase",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "when making a request",
         "example": "¿Me puedes ayudar, por favor? (Can you help me, please?)"
@@ -38,7 +38,7 @@
         "pronunciation": "grah-syahs",
         "meaning": "thank you",
         "part_of_speech": "interjection",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 4,
         "when_to_say": "when expressing gratitude",
         "example": "Gracias por tu ayuda. (Thank you for your help.)"
@@ -49,7 +49,7 @@
         "pronunciation": "see",
         "meaning": "yes",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "when agreeing",
         "example": "¿Quieres ir? Sí. (Do you want to go? Yes.)"
@@ -60,7 +60,7 @@
         "pronunciation": "noh",
         "meaning": "no",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 6,
         "when_to_say": "when disagreeing",
         "example": "¿Te gusta esto? No. (Do you like this? No.)"
@@ -71,7 +71,7 @@
         "pronunciation": "pehr-dohn",
         "meaning": "excuse me",
         "part_of_speech": "interjection",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 7,
         "when_to_say": "when seeking attention",
         "example": "Perdón, ¿me puede ayudar? (Excuse me, can you help me?)"
@@ -82,7 +82,7 @@
         "pronunciation": "loh syen-toh",
         "meaning": "I'm sorry",
         "part_of_speech": "phrase",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 8,
         "when_to_say": "when apologizing",
         "example": "Lo siento, no quise ofenderte. (I'm sorry, I didn't mean to offend you.)"
@@ -93,7 +93,7 @@
         "pronunciation": "byen",
         "meaning": "well",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 9,
         "when_to_say": "to describe a state or action",
         "example": "Estoy bien, gracias. (I am well, thank you.)"
@@ -104,7 +104,7 @@
         "pronunciation": "mahl",
         "meaning": "bad",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 10,
         "when_to_say": "to describe a negative state or action",
         "example": "Me siento mal hoy. (I feel bad today.)"
@@ -115,7 +115,7 @@
         "pronunciation": "kah-sah",
         "meaning": "house ",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to a home",
         "example": "Vivo en una casa grande. (I live in a big house.)"
@@ -126,7 +126,7 @@
         "pronunciation": "koh-mee-dah",
         "meaning": "food",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to meals or food items",
         "example": "Me gusta la comida italiana. (I like Italian food.)"
@@ -137,7 +137,7 @@
         "pronunciation": "ah-gwah",
         "meaning": "water",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to drinking water",
         "example": "Necesito un vaso de agua. (I need a glass of water.)"
@@ -148,7 +148,7 @@
         "pronunciation": "ah-mee-goh",
         "meaning": "friend",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to a friend",
         "example": "Mi amigo es muy divertido. (My friend is very funny.)"
@@ -159,7 +159,7 @@
         "pronunciation": "fah-mee-lee-ah",
         "meaning": "family",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to one's family",
         "example": "Mi familia es muy unida. (My family is very close.)"
@@ -170,7 +170,7 @@
         "pronunciation": "trah-bah-hoh",
         "meaning": "work",
         "part_of_speech": "noun",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to refer to employment or tasks",
         "example": "Tengo mucho trabajo hoy. (I have a lot of work today.)"
@@ -181,7 +181,7 @@
         "pronunciation": "eh-skweh-lah",
         "meaning": "school",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to an educational institution",
         "example": "Los niños van a la escuela. (The children go to school.)"
@@ -192,7 +192,7 @@
         "pronunciation": "lee-broh",
         "meaning": "book",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to a book",
         "example": "Estoy leyendo un libro interesante. (I am reading an interesting book.)"
@@ -203,7 +203,7 @@
         "pronunciation": "moo-see-kah",
         "meaning": "music",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 2,
         "when_to_say": "to refer to music",
         "example": "Me encanta la música clásica. (I love classical music.)"
@@ -214,7 +214,7 @@
         "pronunciation": "peh-lee-koo-lah",
         "meaning": "movie",
         "part_of_speech": "noun",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to refer to a film",
         "example": "Vi una película emocionante. (I saw an exciting movie.)"
@@ -225,7 +225,7 @@
         "pronunciation": "syoo-dahd",
         "meaning": "city",
         "part_of_speech": "noun",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say ": "to refer to an urban area",
         "example": "La ciudad es muy grande. (The city is very big.)"
@@ -236,7 +236,7 @@
         "pronunciation": "koh-cheh",
         "meaning": "car",
         "part_of_speech": "noun",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 1,
         "when_to_say": "to refer to a vehicle",
         "example": "Tengo un coche rojo. (I have a red car.)"
@@ -247,7 +247,7 @@
         "pronunciation": "trah-bah-har",
         "meaning": "to work",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of working",
         "example": "Voy a trabajar mañana. (I am going to work tomorrow.)"
@@ -258,7 +258,7 @@
         "pronunciation": "hoo-gar",
         "meaning": "to play",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of playing",
         "example": "Me gusta jugar al fútbol. (I like to play soccer.)"
@@ -269,7 +269,7 @@
         "pronunciation": "leh-ehr",
         "meaning": "to read",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of reading",
         "example": "Voy a leer un libro. (I am going to read a book.)"
@@ -280,7 +280,7 @@
         "pronunciation": "eh-scree-beer",
         "meaning": "to write",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of writing",
         "example": "Escribo una carta. (I write a letter.)"
@@ -291,7 +291,7 @@
         "pronunciation": "koh-rehr",
         "meaning": "to run",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of running",
         "example": "Me gusta correr en el parque. (I like to run in the park.)"
@@ -302,7 +302,7 @@
         "pronunciation": "koh-see-nar",
         "meaning": "to cook",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 2,
         "when_to_say": "to describe the action of cooking",
         "example": "Voy a cocinar la cena. (I am going to cook dinner.)"
@@ -313,7 +313,7 @@
         "pronunciation": "kohm-prar",
         "meaning": "to buy",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe the action of buying",
         "example": "Voy a comprar un regalo. (I am going to buy a gift.)"
@@ -324,7 +324,7 @@
         "pronunciation": "vehn-dehr",
         "meaning": "to sell",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe the action of selling",
         "example": "Ella vende frutas en el mercado. (She sells fruits at the market.)"
@@ -335,7 +335,7 @@
         "pronunciation": "feh-leez",
         "meaning": "happy",
         "part_of_speech": "adjective",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 3,
         "when_to_say": "to describe a positive emotion",
         "example": "Estoy muy feliz hoy. (I am very happy today.)"
@@ -346,7 +346,7 @@
         "pronunciation": "trees-teh",
         "meaning": "sad",
         "part_of_speech": "adjective",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 3,
         "when_to_say": "to describe a negative emotion",
         "example": "Ella está triste porque perdió su libro. (She is sad because she lost her book.)"
@@ -357,7 +357,7 @@
         "pronunciation": "rah-pee-doh",
         "meaning": "fast",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe speed",
         "example": "El coche es muy rápido. (The car is very fast.)"
@@ -368,7 +368,7 @@
         "pronunciation": "len-toh",
         "meaning": "slow",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe speed",
         "example": "El tortuga es lento. (The turtle is slow.)"
@@ -379,7 +379,7 @@
         "pronunciation": "grahn-deh",
         "meaning": "big",
         "part_of_speech": "adjective",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 3,
         "when_to_say": "to describe size",
         "example": "La casa es grande. (The house is big.)"
@@ -390,7 +390,7 @@
         "pronunciation": "peh-keh-nyoh",
         "meaning": "small",
         "part_of_speech": "adjective",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 3,
         "when_to_say": "to describe size",
         "example": "El perro es pequeño. (The dog is small.)"
@@ -401,7 +401,7 @@
         "pronunciation": "boh-nee-toh",
         "meaning": "pretty",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe appearance",
         "example": "El vestido es bonito. (The dress is pretty.)"
@@ -412,7 +412,7 @@
         "pronunciation": "feh-oh",
         "meaning": "ugly",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 3,
         "when_to_say": "to describe appearance",
         "example": "El edificio es feo. (The building is ugly.)"
@@ -423,7 +423,7 @@
         "pronunciation": "kah-lee-en-teh",
         "meaning": "hot",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe temperature",
         "example": "El café está caliente. (The coffee is hot.)"
@@ -434,7 +434,7 @@
         "pronunciation": "free-oh",
         "meaning": "cold",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe temperature",
         "example": "El agua está fría. (The water is cold.)"
@@ -443,12 +443,12 @@
         "Id": "41",
         "word": "fácil",
         "pronunciation": "fah-seel",
-        "meaning": "easy",
+        "meaning": "Easy",
         "part_of_speech": "adjective",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 4,
         "when_to_say": "to describe difficulty level",
-        "example": "Este ejercicio es fácil. (This exercise is easy.)"
+        "example": "Este ejercicio es fácil. (This exercise is Easy.)"
     },
     {
         "Id": "42",
@@ -456,7 +456,7 @@
         "pronunciation": "dee-fee-seel",
         "meaning": "difficult",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson _no": 4,
         "when_to_say": "to describe difficulty level",
         "example": "Este examen es difícil. (This exam is difficult.)"
@@ -467,7 +467,7 @@
         "pronunciation": "een-teh-lee-hen-teh",
         "meaning": "intelligent",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe someone's intellect",
         "example": "Ella es muy inteligente. (She is very intelligent.)"
@@ -478,7 +478,7 @@
         "pronunciation": "sim-pah-tee-koh",
         "meaning": "nice",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe someone's character",
         "example": "Él es muy simpático. (He is very nice.)"
@@ -489,7 +489,7 @@
         "pronunciation": "ah-mah-bleh",
         "meaning": "kind",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe someone's character",
         "example": "La señora es muy amable. (The lady is very kind.)"
@@ -500,7 +500,7 @@
         "pronunciation": "peh-reh-soh-soh",
         "meaning": "lazy",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 4,
         "when_to_say": "to describe someone's character",
         "example": "Él es muy perezoso. (He is very lazy.)"
@@ -509,9 +509,9 @@
         "Id": "47",
         "word": "trabajador",
         "pronunciation": "trah-bah-ha-dor",
-        "meaning": "hardworking",
+        "meaning": "Hardworking",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 5,
         "when_to_say": "to describe someone's work ethic",
         "example": "Ella es una trabajadora muy dedicada. (She is a very dedicated worker.)"
@@ -522,7 +522,7 @@
         "pronunciation": "sehr-kah",
         "meaning": "near",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "to describe proximity",
         "example": "La tienda está cerca. (The store is near.)"
@@ -533,7 +533,7 @@
         "pronunciation": "leh-hos",
         "meaning": "far",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "to describe distance",
         "example": "La playa está lejos. (The beach is far.)"
@@ -544,7 +544,7 @@
         "pronunciation": "see-em-preh",
         "meaning": "always",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "to describe frequency",
         "example": "Siempre llego a tiempo. (I always arrive on time.)"
@@ -555,7 +555,7 @@
         "pronunciation": "noon-kah",
         "meaning": "never",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "to describe frequency",
         "example": "Nunca como carne. (I never eat meat.)"
@@ -566,7 +566,7 @@
         "pronunciation": "ah beh-sehs",
         "meaning": "sometimes",
         "part_of_speech": "adverb",
-        "difficulty": "easy",
+        "difficulty": "Easy",
         "Lesson_no": 5,
         "when_to_say": "to describe frequency",
         "example": "A veces voy al cine. (Sometimes I go to the movies.)"
@@ -577,7 +577,7 @@
         "pronunciation": "rah-pee-dah-men-teh",
         "meaning": "quickly",
         "part_of_speech": "adverb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 5,
         "when_to_say": "to describe the speed of an action",
         "example": "Ella corre rápidamente. (She runs quickly.)"
@@ -588,7 +588,7 @@
         "pronunciation": "trahn-kee-loh",
         "meaning": "calm",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 5,
         "when_to_say": "to describe a peaceful state",
         "example": "El lago es muy tranquilo. (The lake is very calm.)"
@@ -599,7 +599,7 @@
         "pronunciation": "sohr-pren-den-teh",
         "meaning": "surprising",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe something unexpected",
         "example": "Fue una noticia sorprendente. (It was a surprising news.)"
@@ -610,7 +610,7 @@
         "pronunciation": "een-teh-reh-sahn-teh",
         "meaning": "interesting",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe something that captures attention",
         "example": "El libro es muy interesante. (The book is very interesting.)"
@@ -619,12 +619,12 @@
         "Id": "57",
         "word": "difícilmente",
         "pronunciation": "dee-fee-seel-men-teh",
-        "meaning": "hardly",
+        "meaning": "Hardly",
         "part_of_speech": "adverb",
-        "difficulty": "difficult",
+        "difficulty": "Hard",
         "Lesson_no": 6,
-        "when_to_say": "to describe something that is not easy to do",
-        "example": "Difícilmente puedo entenderlo. (I can hardly understand it.)"
+        "when_to_say": "to describe something that is not Easy to do",
+        "example": "Difícilmente puedo entenderlo. (I can Hardly understand it.)"
     },
     {
         "Id": "58",
@@ -632,7 +632,7 @@
         "pronunciation": "een-kreh-ee-bleh",
         "meaning": "incredible",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe something extraordinary",
         "example": "La vista es increíble. (The view is incredible.)"
@@ -643,7 +643,7 @@
         "pronunciation": "deh-sah-fee-ahn-teh",
         "meaning": "challenging",
         "part_of_speech": "adjective",
-        "difficulty": "difficult",
+        "difficulty": "Hard",
         "Lesson_no": 6,
         "when_to_say": "to describe something that requires effort",
         "example": "El examen fue desafiante. (The exam was challenging.)"
@@ -654,7 +654,7 @@
         "pronunciation": "mah-rah-vee-yoh-soh",
         "meaning": "wonderful",
         "part_of_speech": "adjective",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe something delightful",
         "example": "El viaje fue maravilloso. (The trip was wonderful.)"
@@ -665,7 +665,7 @@
         "pronunciation": "ehks-trah-or-dee-nah-ree-oh",
         "meaning": "extraordinary",
         "part_of_speech": "adjective",
-        "difficulty": "difficult",
+        "difficulty": "Hard",
         "Lesson_no": 6,
         "when_to_say": "to describe something exceptional",
         "example": "Su talento es extraordinario. (Her talent is extraordinary.)"
@@ -676,7 +676,7 @@
         "pronunciation": "deh-sah-pah-reh-sehr",
         "meaning": "to disappear",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe the action of vanishing",
         "example": "El mago puede desaparecer. (The magician can disappear.)"
@@ -687,7 +687,7 @@
         "pronunciation": "reh-koh-noh-sehr",
         "meaning": "to recognize",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 6,
         "when_to_say": "to describe the action of identifying someone or something",
         "example": "No puedo reconocer a esa persona. (I can't recognize that person.)"
@@ -698,7 +698,7 @@
         "pronunciation": "kohm-prehn-syohn",
         "meaning": "understanding",
         "part_of_speech": "noun",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to refer to the ability to understand",
         "example": "La comprensión es clave para aprender. (Understanding is key to learning.)"
@@ -709,7 +709,7 @@
         "pronunciation": "dehs-kree-beer",
         "meaning": "to describe",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to explain or detail something",
         "example": "Voy a describir mi día. (I will describe my day.)"
@@ -720,7 +720,7 @@
         "pronunciation": "ehks-plee-kahr",
         "meaning": "to explain",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to clarify or make something understandable",
         "example": "Ella va a explicar la lección. (She is going to explain the lesson.)"
@@ -731,7 +731,7 @@
         "pronunciation": "kohn-behr-sah-syohn",
         "meaning": "conversation",
         "part_of_speech": "noun",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to refer to a dialogue between people",
         "example": "Tuvimos una buena conversación. (We had a good conversation.)"
@@ -742,7 +742,7 @@
         "pronunciation": "pehn-sar",
         "meaning": "to think",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to describe the action of thinking",
         "example": "Necesito pensar en eso. (I need to think about that.)"
@@ -753,7 +753,7 @@
         "pronunciation": "kreh-ehr",
         "meaning": "to believe",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 7,
         "when_to_say": "to express belief or opinion",
         "example": "Creo que es una buena idea. (I believe it's a good idea.)"
@@ -764,7 +764,7 @@
         "pronunciation": "sehn-teer",
         "meaning": "to feel",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe emotions or sensations",
         "example": "Siento alegría al verte. (I feel joy when I see you.)"
@@ -775,7 +775,7 @@
         "pronunciation": "deh-see-deer",
         "meaning": "to decide",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to make a choice or conclusion",
         "example": "Debo decidir pronto. (I must decide soon.)"
@@ -786,7 +786,7 @@
         "pronunciation": "reh-sohl-vehr",
         "meaning": "to solve",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of finding a solution",
         "example": "Necesito resolver este problema. (I need to solve this problem.)"
@@ -797,7 +797,7 @@
         "pronunciation": "meh-hoh-rahr",
         "meaning": "to improve",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of making something better",
         "example": "Quiero mejorar mis habilidades. (I want to improve my skills.)"
@@ -808,7 +808,7 @@
         "pronunciation": "kahm-byahr",
         "meaning": "to change",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of making a change",
         "example": "Voy a cambiar mi estilo de vida. (I am going to change my lifestyle.)"
@@ -819,7 +819,7 @@
         "pronunciation": "ah-dahp-tahr",
         "meaning": "to adapt",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of adjusting to new conditions",
         "example": "Es importante adaptar nuestras estrategias. (It's important to adapt our strategies.)"
@@ -830,7 +830,7 @@
         "pronunciation": "ee-nee-syahr",
         "meaning": "to start",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of beginning something",
         "example": "Voy a iniciar un nuevo proyecto. (I am going to start a new project.)"
@@ -841,7 +841,7 @@
         "pronunciation": "tehr-mee-nahr",
         "meaning": "to finish",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of completing something",
         "example": "Necesito terminar mi tarea. (I need to finish my homework.)"
@@ -852,7 +852,7 @@
         "pronunciation": "or-gah-nee-sahr",
         "meaning": "to organize",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 8,
         "when_to_say": "to describe the action of arranging things",
         "example": "Voy a organizar una reunión. (I am going to organize a meeting.)"
@@ -863,7 +863,7 @@
         "pronunciation": "plah-nee-fee-kahr",
         "meaning": "to plan",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of making plans",
         "example": "Necesito planificar mis vacaciones. (I need to plan my vacation.)"
@@ -874,7 +874,7 @@
         "pronunciation": "eh-vah-loo-ahr",
         "meaning": "to evaluate",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of assessing something",
         "example": "Voy a evaluar los resultados. (I am going to evaluate the results.)"
@@ -885,7 +885,7 @@
         "pronunciation": "een-ves-tee-gahr",
         "meaning": "to investigate",
         "part_of_speech": "verb",
-        "difficulty": "medium",
+        "difficulty": "Medium",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of researching or examining",
         "example": "Voy a investigar este tema. (I am going to investigate this topic.)"
@@ -896,7 +896,7 @@
         "pronunciation": "deh-sah-rroh-lahr",
         "meaning": "to develop",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of growth or improvement",
         "example": "Estamos desarrollando una nueva aplicación. (We are developing a new application.)"
@@ -907,7 +907,7 @@
         "pronunciation": "trahns-for-mar",
         "meaning": "to transform",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of changing something significantly",
         "example": "La tecnología puede transformar nuestras vidas. (Technology can transform our lives.)"
@@ -918,7 +918,7 @@
         "pronunciation": "kohn-stroo-eer",
         "meaning": "to build",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of making something",
         "example": "Vamos a construir una casa nueva. (We are going to build a new house.)"
@@ -929,7 +929,7 @@
         "pronunciation": "kohn-tree-boo-eer",
         "meaning": "to contribute",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of giving or adding to something",
         "example": "Todos pueden contribuir al proyecto. (Everyone can contribute to the project.)"
@@ -940,7 +940,7 @@
         "pronunciation": "moh-tee-vahr",
         "meaning": "to motivate",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of encouraging someone",
         "example": "Es importante motivar a los estudiantes. (It's important to motivate students.)"
@@ -951,7 +951,7 @@
         "pronunciation": "een-ves-teer",
         "meaning": "to invest",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of putting money into something for profit",
         "example": "Decidí invertir en acciones. (I decided to invest in stocks.)"
@@ -962,7 +962,7 @@
         "pronunciation": "kohm-pleh-tahr",
         "meaning": "to complete",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of finishing something",
         "example": "Necesito completar el informe antes de mañana. (I need to complete the report before tomorrow.)"
@@ -973,7 +973,7 @@
         "pronunciation": "es-for-sar-seh",
         "meaning": "to strive",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 9,
         "when_to_say": "to describe the action of making an effort",
         "example": "Debemos esforzarnos para alcanzar nuestras metas. (We must strive to achieve our goals.)"
@@ -984,7 +984,7 @@
         "pronunciation": "reh-kohn-stroo-eer",
         "meaning": "to reconstruct",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of rebuilding something",
         "example": "Tendremos que reconstruir la casa después del incendio. (We will have to reconstruct the house after the fire.)"
@@ -995,7 +995,7 @@
         "pronunciation": "ah-nah-lee-zahr",
         "meaning": "to analyze",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of examining something in detail",
         "example": "Voy a analizar los datos del experimento. (I will analyze the data from the experiment.)"
@@ -1006,7 +1006,7 @@
         "pronunciation": "seen-teh-tee-zahr",
         "meaning": "to synthesize",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of combining elements to form a coherent whole",
         "example": "Es necesario sintetizar la información para el informe. (It is necessary to synthesize the information for the report.)"
@@ -1017,7 +1017,7 @@
         "pronunciation": "op-tee-mee-zahr",
         "meaning": "to optimize",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of making something as effective as possible",
         "example": "Debemos optimizar nuestros recursos. (We must optimize our resources.)"
@@ -1028,7 +1028,7 @@
         "pronunciation": "eh-vah-loo-ahr",
         "meaning": "to evaluate",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of assessing the value or quality of something",
         "example": "Es importante evaluar el rendimiento del equipo. (It is important to evaluate the team's performance.)"
@@ -1039,7 +1039,7 @@
         "pronunciation": "deh-sah-fee-ahr",
         "meaning": "to challenge",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of inviting someone to engage in a contest or competition",
         "example": "Voy a desafiar a mi amigo a un juego. (I am going to challenge my friend to a game.)"
@@ -1050,7 +1050,7 @@
         "pronunciation": "reh-deh-fee-neer",
         "meaning": "to redefine",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of changing the meaning or interpretation of something",
         "example": "Es hora de redefinir nuestras metas. (It's time to redefine our goals.)"
@@ -1061,7 +1061,7 @@
         "pronunciation": "pehr-swah-deer",
         "meaning": "to persuade",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of convincing someone to do something",
         "example": "Trato de persuadir a mis amigos a que se unan a la causa. (I try to persuade my friends to join the cause.)"
@@ -1072,7 +1072,7 @@
         "pronunciation": "koh-lah-boh-rahr",
         "meaning": "to collaborate",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of working together with others",
         "example": "Vamos a colaborar en este proyecto. (We are going to collaborate on this project.)"
@@ -1083,7 +1083,7 @@
         "pronunciation": "een-no-vahr",
         "meaning": "to innovate",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of introducing new ideas or methods",
         "example": "Es fundamental innovar para mantenerse competitivo. (It is essential to innovate to remain competitive.)"
@@ -1094,7 +1094,7 @@
         "pronunciation": "reh-voh-loo cion-ar",
         "meaning": "to revolutionize",
         "part_of_speech": "verb",
-        "difficulty": "hard",
+        "difficulty": "Hard",
         "Lesson_no": 10,
         "when_to_say": "to describe the action of causing a dramatic change in something",
         "example": "La nueva tecnología puede revolucionar la industria. (The new technology can revolutionize the industry.)"

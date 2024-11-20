@@ -82,7 +82,7 @@ const Slider = () => {
         <div className='divider'></div>
         <img
           className='w-[30rem] object-cover h-[300px] basis-1/2'
-          src='/Assets/Started.png'
+          src='https://images.shiksha.com/mediadata/images/articles/1593692498phpqoP7Fd.jpeg'
           alt=''
         />
         <div className='basis-1/2'>
@@ -90,10 +90,10 @@ const Slider = () => {
             The Free, fun, and effective way to learn a language!
           </p>
           <div className='flex gap-2 mt-3 flex-col'>
-            <NavLink  to="/GettingStarted" className='btn mx-auto shadow-md w-[18rem]  bg-[#2C6E49]  text-white'>
+            <NavLink  to="/Signup" className='btn mx-auto shadow-md w-[18rem]  bg-[#2C6E49]  text-white'>
               Get Started
             </NavLink>
-            <button className='btn shadow-md mx-auto w-[18rem] text-[#2C6E49]'>Already Have Account?</button>
+            <NavLink to="/Login" className='btn shadow-md mx-auto w-[18rem] text-[#2C6E49]'>Already Have Account?</NavLink>
           </div>
         </div>
       </div>

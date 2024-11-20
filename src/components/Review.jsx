@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Review = () => {
   return (
@@ -16,8 +17,8 @@ const Review = () => {
               </p>
             </div>
 
-            <a
-              href='#'
+            <NavLink to="/"
+              
               className='mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-[#2C6E49] px-5 py-3 text-[#2C6E49] transition hover:bg-[#2C6E49] hover:text-white md:mt-0'>
               <span className='font-medium'> Read all reviews </span>
 
@@ -34,7 +35,7 @@ const Review = () => {
                   d='M14 5l7 7m0 0l-7 7m7-7H3'
                 />
               </svg>
-            </a>
+            </NavLink>
           </div>
 
           <div className='mt-8 grid grid-cols-1 gap-4 md:grid-cols-3'>

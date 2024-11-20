@@ -1,13 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
   return (
     <header className='bg-white'>
       <div className='mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex gap-1 items-center'>
-        <img className='w-12 ' src="/Assets/Logo.jpg" alt="" />
-        <p className='font-semibold text-xl'>LangLearns</p>
+          <img className='w-12 ' src='/Assets/Logo.jpg' alt='' />
+          <p className='font-semibold text-xl'>LangLearns</p>
         </div>
 
         <div className='flex flex-1 items-center justify-end md:justify-between'>
@@ -80,11 +79,11 @@ const Navbar = () => {
 
           <div className='flex items-center gap-4'>
             <div className='sm:flex sm:gap-4'>
-              <a
-                className='btn text-white font-semibold w-20 bg-[#2C6E49]'
-                href='#'>
+              <NavLink
+                to='/Login'
+                className='btn text-white font-semibold w-20 bg-[#2C6E49]'>
                 Login
-              </a>
+              </NavLink>
             </div>
 
             <button className='block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden'>
@@ -106,7 +105,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="divider mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8"></div>
+      <div className='divider mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'></div>
     </header>
   );
 };

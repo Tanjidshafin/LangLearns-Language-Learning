@@ -8,6 +8,8 @@ import StartLearning from './pages/StartLearning';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import EachLesson from './pages/EachLesson';
+import Tutorials from './pages/Tutorials';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +23,8 @@ function App() {
         <Route path='/Login' element={<Login />} />
         <Route path='/Signup' element={<SignUp />} />
         <Route path='/Lesson/:lessonNo' element={<EachLesson />} />
+        <Route path='/Tutorials' element={<Tutorials />} />
+        <Route path='/AboutUs' element={<AboutUs />} />
       </Routes>
       <Footer />
     </>

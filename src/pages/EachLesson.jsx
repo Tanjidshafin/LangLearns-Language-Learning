@@ -52,7 +52,14 @@ const EachLesson = () => {
         <div className='grid grid-cols-1 mt-4 md:grid-cols-2 lg:grid-cols-4 gap-5'>
           {filtered.map((leson) => (
             <NavLink className='hover:animate-background rounded-xl bg-gradient-to-r from-[#2C6E49] via-[#9E2B25] to-[#A0D2DB] p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]'>
-              <div className='rounded-[10px] bg-white h-[15rem] p-4 sm:p-6'>
+              <div
+                className={`rounded-[10px] h-[15rem] p-4 sm:p-6 ${
+                  leson.difficulty === 'Easy'
+                    ? 'bg-emerald-200'
+                    : leson.difficulty === 'Medium'
+                    ? 'bg-amber-200'
+                    : 'bg-red-300'
+                }`}>
                 <a href='#'>
                   <h3 className='mt-0.5 mb-5 text-lg font-semibold text-gray-900'>
                     {leson.word}
@@ -93,7 +100,13 @@ const EachLesson = () => {
                       setWord(leson.word);
                       seMeaning(leson.meaning);
                     }}
-                    className='btn text-[#2C6E49] hover:bg-[#2C6E49] hover:text-white border-[#2C6E49] bg-white w-full'>
+                    className={`btn w-full ${
+                      leson.difficulty === 'Easy'
+                        ? 'bg-white hover:bg-[#2C6E49] hover:text-white'
+                        : leson.difficulty === 'Medium'
+                        ? 'bg-white hover:bg-yellow-400'
+                        : 'bg-white hover:bg-[#9E2B25] hover:text-white'
+                    }`}>
                     When to say
                   </button>
                 </div>

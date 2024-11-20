@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { NavLink } from 'react-router-dom';
 import CountUp from 'react-countup';
+import Tutorial from '../components/Tutorial';
 
 const StartLearning = () => {
   const { lessons } = useContext(AppContext);
@@ -11,7 +12,7 @@ const StartLearning = () => {
     <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
       <div>
         <p className='text-center text-xl md:text-3xl font-semibold'>
-          Starting Your <span className='text-[#2C6E49]'>Language</span>{' '}
+          Starting Your <span className='text-[#2C6E49]'>Language </span>
           Learning Journey
         </p>
         <p className='text-gray-500 text-center max-w-[55rem] my-5 mx-auto'>
@@ -146,7 +147,9 @@ const StartLearning = () => {
               </div>
             )}
           </div>
+          <div></div>
         </div>
+        <Tutorial />
       </div>
     </div>
   );
