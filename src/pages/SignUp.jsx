@@ -81,7 +81,7 @@ const SignUp = () => {
                 <span className='sr-only'>Home</span>
                 <img
                   className='rounded-full w-14'
-                  src='/Assets/Logo.jpg'
+                  src='https://w7.pngwing.com/pngs/280/358/png-transparent-ahhaa-logo-service-business-cold-icon-hand-service-room.png'
                   alt=''
                 />
               </a>
@@ -100,6 +100,26 @@ const SignUp = () => {
 
           <main className='flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6'>
             <div className='max-w-xl lg:max-w-3xl'>
+              <div className='relative -mt-16 block lg:hidden'>
+                <a className='inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20'>
+                  <img
+                    className='rounded-full'
+                    src='https://w7.pngwing.com/pngs/280/358/png-transparent-ahhaa-logo-service-business-cold-icon-hand-service-room.png'
+                    alt=''
+                  />
+                </a>
+
+                <h1 className='mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl'>
+                  Join the Journey to Language Mastery
+                </h1>
+
+                <p className='mt-4 leading-relaxed text-gray-500'>
+                  Create your account to explore fun and interactive lessons,
+                  expand your vocabulary, and master a new language. Your
+                  journey to fluency begins here—sign up and start learning
+                  today!
+                </p>
+              </div>
               <form
                 onSubmit={handleSignUp}
                 className='mt-8 grid grid-cols-6 gap-6'>
@@ -224,7 +244,7 @@ const SignUp = () => {
                   </p>
                 </div>
 
-                <div className='col-span-6 sm:flex sm:items-center sm:gap-4'>
+                <div className='col-span-6 flex flex-col gap-4 md:flex-row sm:flex sm:items-center sm:gap-4'>
                   <button
                     type='submit'
                     className='inline-block shrink-0 rounded-md border border-[#2C6E49] bg-[#2C6E49] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#2C6E49] focus:outline-none focus:ring active:text-[#2C6E49]'>

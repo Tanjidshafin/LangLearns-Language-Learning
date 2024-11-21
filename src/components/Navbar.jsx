@@ -18,7 +18,11 @@ const Navbar = () => {
     <header className='bg-white'>
       <div className='mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex gap-1 items-center'>
-          <img className='w-12 ' src='/Assets/Logo.jpg' alt='' />
+          <img
+            className='w-12 '
+            src='https://w7.pngwing.com/pngs/280/358/png-transparent-ahhaa-logo-service-business-cold-icon-hand-service-room.png'
+            alt=''
+          />
           <p className='font-semibold text-xl'>LangLearns</p>
         </div>
 
@@ -93,6 +97,17 @@ const Navbar = () => {
                     Welcome,{' '}
                     <span className='font-semibold'>{user.displayName}</span>
                   </span>
+                  <NavLink to="/MyProfile">
+                    <img
+                      className='rounded-full hidden md:flex w-[3rem]'
+                      src={
+                        user.photoUrl
+                          ? user.photoUrl
+                          : 'https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1725655669.jpg'
+                      }
+                      alt=''
+                    />
+                  </NavLink>
                   <button
                     onClick={handleLogout}
                     className='btn text-white font-semibold w-20 bg-red-600'>
@@ -155,7 +170,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Tutorials"
+                    to='/Tutorials'
                     className={({ isActive }) =>
                       `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
                         isActive
