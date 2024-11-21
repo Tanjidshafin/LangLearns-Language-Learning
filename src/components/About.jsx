@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className='mt-6 md:mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
+    <div data-aos="fade-right" className='mt-6 md:mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
       <p className='text-center text-xl md:text-3xl font-semibold'>About Us</p>
       <div className='flex mt-10 items-center flex-col md:flex-row gap-4 bg-[#F4F9FF] rounded-xl'>
         <div className='basis-1/2'>

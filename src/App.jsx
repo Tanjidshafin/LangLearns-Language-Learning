@@ -1,5 +1,6 @@
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
@@ -11,9 +12,16 @@ import EachLesson from './pages/EachLesson';
 import Tutorials from './pages/Tutorials';
 import AboutUs from './pages/AboutUs';
 import PrivateRoute from './privateRoute/PrivateRoute';
+import MyProfile from './pages/MyProfile';
 
 function App() {
   const [count, setCount] = useState(0);
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
@@ -39,7 +47,16 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route
+          path='/MyProfile'
+          element={
+            <PrivateRoute>
+              <MyProfile />
+            </PrivateRoute>
+          }
+        />
         <Route path='/AboutUs' element={<AboutUs />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </>

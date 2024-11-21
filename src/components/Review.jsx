@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Review = () => {
   return (
-    <div className='mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
+    <div data-aos="fade-up" className='mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
       <section className='bg-gray-50'>
         <div className='mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16'>
           <div className='md:flex md:items-end md:justify-between'>

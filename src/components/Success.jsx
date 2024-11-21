@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const Success = () => {
   return (
-    <div className='mx-auto mt-10 max-w-screen-xl px-4 sm:px-6 lg:px-8'>
+    <div data-aos="fade-up-right" className='mx-auto mt-10 max-w-screen-xl px-4 sm:px-6 lg:px-8'>
       <p className='text-center text-xl md:text-3xl font-semibold'>
         Our Milestones: Celebrating Success Together
       </p>

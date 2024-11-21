@@ -1,22 +1,71 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { signInWithPopup } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase.init';
 import { AppContext } from '../context/AppContext';
-
 const SignUp = () => {
-  const { setUser,user } = useContext(AppContext);
+  const { setUser } = useContext(AppContext);
   const navigate = useNavigate();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConfirmation, setPasswordConfirmation] = useState('');
+  const [name, setName] = useState('');
+  const [error, setError] = useState('');
+  const isValidPassword = (password) => {
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
 
+    if (password.length < 8) {
+      return false;
+    }
+    return hasUpperCase && hasLowerCase;
+  };
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+
+    if (password !== passwordConfirmation) {
+      setError('Passwords do not match');
+      return;
+    }
+    if (!isValidPassword(password)) {
+      setError(
+        'Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter.'
+      );
+      return;
+    }
+    setName(firstName + lastName);
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password,
+        name
+      );
+      const user = userCredential.user;
+      console.log('User  Info:', user);
+      setUser(user);
+      navigate('/');
+    } catch (error) {
+      console.error(error);
+      setError(error.message);
+    }
+  };
   const handleGoogleSignUp = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
+
       const user = result.user;
+
       console.log('User  Info:', user);
+
       setUser(user);
-      navigate("/")
+
+      navigate('/');
     } catch (error) {
-      console.error('Error during Google sign-up:', error);
+      console.error(error);
     }
   };
   return (
@@ -54,31 +103,9 @@ const SignUp = () => {
 
           <main className='flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6'>
             <div className='max-w-xl lg:max-w-3xl'>
-              <div className='relative -mt-16 block lg:hidden'>
-                <a
-                  className='inline-flex size-16 items-center justify-center rounded-full bg-white text-[#2C6E49] sm:size-20'
-                  href='#'>
-                  <span className='sr-only'>Home</span>
-                  <img
-                    className='rounded-full w-14'
-                    src='/Assets/Logo.jpg'
-                    alt=''
-                  />
-                </a>
-
-                <h1 className='mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl'>
-                  Join the Journey to Language Mastery
-                </h1>
-
-                <p className='mt-4 leading-relaxed text-gray-500'>
-                  Create your account to explore fun and interactive lessons,
-                  expand your vocabulary, and master a new language. Your
-                  journey to fluency begins here—sign up and start learning
-                  today!
-                </p>
-              </div>
-
-              <form action='#' className='mt-8 grid grid-cols-6 gap-6'>
+              <form
+                onSubmit={handleSignUp}
+                className='mt-8 grid grid-cols-6 gap-6'>
                 <div className='col-span-6 sm:col-span-3'>
                   <label
                     htmlFor='FirstName'
@@ -90,6 +117,8 @@ const SignUp = () => {
                     type='text'
                     id='FirstName'
                     name='first_name'
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     className='mt-1 w-full pl-2 h-12 border-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
                   />
                 </div>
@@ -105,6 +134,8 @@ const SignUp = () => {
                     type='text'
                     id='LastName'
                     name='last_name'
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     className='mt-1 w-full pl-2 h-12 border-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
                   />
                 </div>
@@ -113,14 +144,15 @@ const SignUp = () => {
                   <label
                     htmlFor='Email'
                     className='block text-sm font-medium text-gray-700'>
-                    {' '}
-                    Email{' '}
+                    Email
                   </label>
 
                   <input
                     type='email'
                     id='Email'
                     name='email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className='mt-1 w-full pl-2 h-12 border-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
                   />
                 </div>
@@ -129,14 +161,15 @@ const SignUp = () => {
                   <label
                     htmlFor='Password'
                     className='block text-sm font-medium text-gray-700'>
-                    {' '}
-                    Password{' '}
+                    Password
                   </label>
 
                   <input
                     type='password'
                     id='Password'
                     name='password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className='mt-1 w-full pl-2 h-12 border-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
                   />
                 </div>
@@ -152,9 +185,15 @@ const SignUp = () => {
                     type='password'
                     id='PasswordConfirmation'
                     name='password_confirmation'
+                    value={passwordConfirmation}
+                    onChange={(e) => setPasswordConfirmation(e.target.value)}
                     className='mt-1 w-full pl-2 h-12 border-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
                   />
                 </div>
+
+                {error && (
+                  <div className='col-span-6 text-red-500'>{error}</div>
+                )}
 
                 <div className='col-span-6'>
                   <label htmlFor='MarketingAccept' className='flex gap-4'>
@@ -181,6 +220,7 @@ const SignUp = () => {
                     </a>
                     and
                     <a href='#' className='text-gray-700 underline'>
+                      {' '}
                       privacy policy
                     </a>
                     .
@@ -189,15 +229,22 @@ const SignUp = () => {
 
                 <div className='col-span-6 sm:flex sm:items-center sm:gap-4'>
                   <button
-                    onClick={handleGoogleSignUp}
+                    type='submit'
                     className='inline-block shrink-0 rounded-md border border-[#2C6E49] bg-[#2C6E49] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#2C6E49] focus:outline-none focus:ring active:text-[#2C6E49]'>
-                    Google Sign Up
+                    Sign Up
+                  </button>
+                  <button
+                    onClick={handleGoogleSignUp}
+                    type='button'
+                    className='inline-block shrink-0 rounded-md border border-[#2C6E49] bg-[#2C6E49] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#2C6E49] focus:outline-none focus:ring active:text-[#2C6E49]'>
+                    Google
                   </button>
 
                   <p className='mt-4 text-sm text-gray-500 sm:mt-0'>
                     Already have an account?
                     <NavLink to='/Login' className='text-gray-700 underline'>
-                      Log in
+                      {' '}
+                      Log in{' '}
                     </NavLink>
                     .
                   </p>

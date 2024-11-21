@@ -12,7 +12,9 @@ const HomeLessons = () => {
         <p className='text-center text-xl md:text-3xl font-semibold'>
           Start Your Journey: Explore Featured Lessons
         </p>
-        <div className='grid mt-7 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
+        <div
+          data-aos='fade-up'
+          className='grid mt-7 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
           {lessons.slice(0, 5).map((lesson) => (
             <NavLink
               to={`/Lesson/${lesson.Lesson_no}`}

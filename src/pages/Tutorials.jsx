@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Tutorials = () => {
   const [loader, setLoader] = useState(true);
@@ -48,7 +49,7 @@ const Tutorials = () => {
               className='w-full'
               width='560'
               height='315'
-              src={video.video}
+              src={`${video.video}?autoplay=1&mute=1`}
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -61,6 +62,9 @@ const Tutorials = () => {
             </div>
           </a>
         ))}
+      </div>
+      <div className='text-center md:text-end mt-5'>
+        <NavLink to="/StartLearning" className="btn bg-[#2C6E49] text-white">Learn Vocabularies</NavLink>
       </div>
     </div>
   );
