@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import EachLesson from './pages/EachLesson';
 import Tutorials from './pages/Tutorials';
 import AboutUs from './pages/AboutUs';
+import PrivateRoute from './privateRoute/PrivateRoute';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,8 +23,22 @@ function App() {
         <Route path='/StartLearning' element={<StartLearning />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Signup' element={<SignUp />} />
-        <Route path='/Lesson/:lessonNo' element={<EachLesson />} />
-        <Route path='/Tutorials' element={<Tutorials />} />
+        <Route
+          path='/Lesson/:lessonNo'
+          element={
+            <PrivateRoute>
+              <EachLesson />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path='/Tutorials'
+          element={
+            <PrivateRoute>
+              <Tutorials />
+            </PrivateRoute>
+          }
+        />
         <Route path='/AboutUs' element={<AboutUs />} />
       </Routes>
       <Footer />

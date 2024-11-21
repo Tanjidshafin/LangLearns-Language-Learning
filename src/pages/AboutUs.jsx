@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
-  )
-}
+    <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8j'>AboutUs</div>
+  );
+};
 
-export default AboutUs
+export default AboutUs;

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import CountUp from 'react-countup';
 
 const HomeLessons = () => {
-  const { lessons } = useContext(AppContext);
+  const { lessons, user } = useContext(AppContext);
 
   return (
     <div className='mt-6 lg:mt-[18rem] mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
@@ -29,7 +29,7 @@ const HomeLessons = () => {
                 <div className='hidden sm:block sm:shrink-0'>
                   <img
                     alt=''
-                    src='/Assets/Spanish Log.png'
+                    src='https://www.pngitem.com/pimgs/m/505-5054502_spain-fifa-logo-spain-flag-logo-circle-hd.png'
                     className='size-12 rounded-lg object-cover shadow-sm'
                   />
                 </div>
@@ -57,7 +57,8 @@ const HomeLessons = () => {
             </NavLink>
           ))}
           <div className='flex items-center justify-center md:justify-normal'>
-            <a
+            <NavLink
+              to={user ? '/StartLearning' : '/Login'}
               className='group relative inline-flex  border-2 items-center overflow-hidden rounded bg-[#F4F9FF] px-8 py-3 text-[black] focus:outline-none focus:ring active:scale-95 duration-150'
               href='#'>
               <span className='absolute -end-full transition-all group-hover:end-4'>
@@ -80,7 +81,7 @@ const HomeLessons = () => {
                 {' '}
                 See more{' '}
               </span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

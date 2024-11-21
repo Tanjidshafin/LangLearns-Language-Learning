@@ -107,7 +107,7 @@ const StartLearning = () => {
                     <div className='hidden sm:block sm:shrink-0'>
                       <img
                         alt=''
-                        src='/Assets/Spanish Log.png'
+                        src='https://www.pngitem.com/pimgs/m/505-5054502_spain-fifa-logo-spain-flag-logo-circle-hd.png'
                         className='size-12 rounded-lg object-cover shadow-sm'
                       />
                     </div>

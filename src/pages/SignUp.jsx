@@ -1,7 +1,24 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { signInWithPopup } from 'firebase/auth';
+import { auth, provider } from '../firebase.init';
+import { AppContext } from '../context/AppContext';
 
 const SignUp = () => {
+  const { setUser,user } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const handleGoogleSignUp = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      console.log('User  Info:', user);
+      setUser(user);
+      navigate("/")
+    } catch (error) {
+      console.error('Error during Google sign-up:', error);
+    }
+  };
   return (
     <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
       <section className='bg-white'>
@@ -171,8 +188,10 @@ const SignUp = () => {
                 </div>
 
                 <div className='col-span-6 sm:flex sm:items-center sm:gap-4'>
-                  <button className='inline-block shrink-0 rounded-md border border-[#2C6E49] bg-[#2C6E49] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#2C6E49] focus:outline-none focus:ring active:text-[#2C6E49]'>
-                    Create an account
+                  <button
+                    onClick={handleGoogleSignUp}
+                    className='inline-block shrink-0 rounded-md border border-[#2C6E49] bg-[#2C6E49] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#2C6E49] focus:outline-none focus:ring active:text-[#2C6E49]'>
+                    Google Sign Up
                   </button>
 
                   <p className='mt-4 text-sm text-gray-500 sm:mt-0'>

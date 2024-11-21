@@ -28,7 +28,7 @@ const About = () => {
           </p>
           <div>
             <NavLink
-              to='/GettingStarted'
+              to='/StartLearning'
               className=' btn bg-[#F4F9FF] w-[10rem] hover:bg-blue-500 hover:text-white text-blue-500 border-blue-500'>
               Get Started
             </NavLink>

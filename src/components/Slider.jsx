@@ -1,7 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 
 const Slider = () => {
+  const { user } = useContext(AppContext);
   const [currentSlider, setCurrentSlider] = useState(0);
   const carouselImages = [
     'https://talkpal.ai/wp-content/uploads/2023/04/TalkPal-illustrations-of-languiage-learning-66.png',
@@ -54,17 +56,6 @@ const Slider = () => {
           </svg>
         </button>
 
-        <div className='flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1'>
-          {carouselImages.map((img, id) => (
-            <button
-              key={`${img}_${id}`}
-              onClick={() => setCurrentSlider(id)}
-              className={`rounded-full duration-500 bg-white ${
-                currentSlider === id ? 'w-8' : 'wz-2'
-              } h-2`}></button>
-          ))}
-        </div>
-
         <div
           className='ease-linear duration-500 flex transform-gpu'
           style={{ transform: `translateX(-${currentSlider * 100}%)` }}>
@@ -89,12 +80,32 @@ const Slider = () => {
           <p className='font-semibold max-w-[20rem] mx-auto text-gray-700 text-xl text-center '>
             The Free, fun, and effective way to learn a language!
           </p>
-          <div className='flex gap-2 mt-3 flex-col'>
-            <NavLink  to="/Signup" className='btn mx-auto shadow-md w-[18rem]  bg-[#2C6E49]  text-white'>
-              Get Started
-            </NavLink>
-            <NavLink to="/Login" className='btn shadow-md mx-auto w-[18rem] text-[#2C6E49]'>Already Have Account?</NavLink>
-          </div>
+          {user ? (
+            <div>
+              <p className='text-center text-gray-500 my-3'>
+                Welcome to our language-learning app! Unlock vocabulary,
+                practice skills, and master new languages in a fun, interactive
+                environment
+              </p>
+              <div className='flex justify-center gap-5'>
+                <NavLink to="/StartLearning" className="btn w-[10rem] bg-[#2C6E49] text-white hover:bg-white hover:text-[#2C6E49] ">Start Learning </NavLink>
+                <NavLink to="/Tutorials" className="btn w-[10rem] bg-[#2C6E49] text-white hover:bg-white hover:text-[#2C6E49]">Tutorials</NavLink>
+              </div>
+            </div>
+          ) : (
+            <div className='flex gap-2 mt-3 flex-col'>
+              <NavLink
+                to='/Signup'
+                className='btn mx-auto shadow-md w-[18rem]  bg-[#2C6E49]  text-white'>
+                Get Started
+              </NavLink>
+              <NavLink
+                to='/Login'
+                className='btn shadow-md mx-auto w-[18rem] text-[#2C6E49]'>
+                Already Have Account?
+              </NavLink>
+            </div>
+          )}
         </div>
       </div>
     </div>

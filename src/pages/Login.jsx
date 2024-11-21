@@ -1,10 +1,31 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { auth, provider } from '../firebase.init';
+import { signInWithPopup } from 'firebase/auth';
+import { AppContext } from '../context/AppContext';
 
 const Login = () => {
+  const { setUser, user } = useContext(AppContext);
+  const navigate = useNavigate();
+  if (user) {
+    navigate('/', { replace: true });
+    return null;
+  }
+
+  const handleGoogleSignIn = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      setUser(user);
+
+      navigate('/');
+    } catch (error) {
+      console.error('Error during Google sign-in:', error);
+    }
+  };
   return (
     <div className=' mx-auto max-w-screen-xl flex justify-center px-4 sm:px-6 lg:px-8'>
-      <div className='max-w-3xl bg-white p-6 shadow-md sm:px-8 sm:py-10 lg:px-12 lg:py-16 dark:bg-zinc-900'>
+      <div className='max-w-3xl bg-white p-6 shadow-md sm:px-8 sm:py-10 lg:px-12 lg:py-16'>
         <div className='flex flex-col justify-between space-x-0 sm:flex-row sm:space-x-12'>
           <div className='mb-8 w-full sm:mb-0 sm:w-1/2'>
             <h2 className='mb-6 text-3xl font-semibold tracking-tight'>
@@ -51,11 +72,13 @@ const Login = () => {
 
           <div className='w-full sm:w-1/2'>
             <p className='mb-6 text-sm'>
-              If you don't already have an account click the button below
-              to create your account.
+              If you don't already have an account click the button below to
+              create your account.
             </p>
 
-            <NavLink to="/Signup" className='mb-2 inline-flex h-10 w-full items-center justify-center rounded-md bg-zinc-800 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-zinc-700'>
+            <NavLink
+              to='/Signup'
+              className='mb-2 inline-flex h-10 w-full items-center justify-center rounded-md bg-zinc-800 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-zinc-700'>
               Create Account
             </NavLink>
 
@@ -76,7 +99,9 @@ const Login = () => {
               SIGN IN WITH FACEBOOK
             </button>
 
-            <button className='flex h-10 w-full items-center justify-center gap-1 rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white'>
+            <button
+              onClick={handleGoogleSignIn}
+              className='flex h-10 w-full items-center justify-center gap-1 rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 32 32'
