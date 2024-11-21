@@ -119,21 +119,6 @@ const Login = () => {
 
             <p className='my-4 text-center'>OR</p>
 
-            <button className='mb-2 flex h-10 w-full items-center justify-center gap-1 rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth={2}
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                className='size-6 text-white'>
-                <path d='M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z' />
-              </svg>
-              SIGN IN WITH FACEBOOK
-            </button>
-
             <button
               onClick={handleGoogleSignIn}
               className='flex h-10 w-full items-center justify-center gap-1 rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white'>
