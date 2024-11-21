@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { auth, provider } from '../firebase.init';
 import { signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
 import { AppContext } from '../context/AppContext';
+import { toast } from 'react-toastify';
 
 const Login = () => {
   const { setUser, user } = useContext(AppContext);
@@ -21,10 +22,10 @@ const Login = () => {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       setUser(user);
-      console.log(user);
+      toast.success(`Welcome Back, ${user.displayName}`);
       navigate('/');
     } catch (error) {
-      console.error('Error during Google sign-in:', error);
+      console.error(error);
       setError('Failed to sign in with Google. Please try again.');
     }
   };
@@ -39,10 +40,11 @@ const Login = () => {
       );
       const user = userCredential.user;
       setUser(user);
-      console.log(user);
+
+      toast.success(`Welcome Back, ${user.displayName}`);
       navigate('/');
     } catch (error) {
-      console.error( error);
+      console.error(error);
       setError('Failed to sign in. Please check your email and password.');
     }
   };

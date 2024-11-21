@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase.init';
 import { AppContext } from '../context/AppContext';
+import { toast } from 'react-toastify';
 const SignUp = () => {
   const { setUser } = useContext(AppContext);
   const navigate = useNavigate();
@@ -45,7 +46,7 @@ const SignUp = () => {
         name
       );
       const user = userCredential.user;
-      console.log('User  Info:', user);
+      toast.success(`Welcome , User`);
       setUser(user);
       navigate('/');
     } catch (error) {
@@ -56,13 +57,9 @@ const SignUp = () => {
   const handleGoogleSignUp = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
-
       const user = result.user;
-
-      console.log('User  Info:', user);
-
       setUser(user);
-
+      toast.success(`Welcome , ${user.displayName}`);
       navigate('/');
     } catch (error) {
       console.error(error);
