@@ -13,6 +13,7 @@ import Tutorials from './pages/Tutorials';
 import AboutUs from './pages/AboutUs';
 import PrivateRoute from './privateRoute/PrivateRoute';
 import MyProfile from './pages/MyProfile';
+import Error from './components/Error';
 
 function App() {
   const [count, setCount] = useState(0);
