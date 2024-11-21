@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { AppContext } from '../context/AppContext';
 import { updateProfile } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const MyProfile = () => {
   const { user, setUser } = useContext(AppContext);
@@ -35,10 +36,10 @@ const MyProfile = () => {
       };
       setUser(updatedUser);
 
-      alert('Profile updated successfully!');
+      toast.success("Profile Updated")
     } catch (error) {
       console.error('Error updating profile:', error);
-      alert('Failed to update profile. Please try again.');
+     toast.warning("Failed To Update")
     } finally {
       setLoading(false);
     }
