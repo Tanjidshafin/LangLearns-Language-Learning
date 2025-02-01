@@ -7,6 +7,7 @@ import Tutorial from '../components/Tutorial';
 const StartLearning = () => {
   const { lessons } = useContext(AppContext);
   const [langSelector, setLangSelector] = useState('spanish');
+  const [toggle, setToggle] = useState('grid');
 
   return (
     <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
@@ -23,8 +24,14 @@ const StartLearning = () => {
         </p>
         <div>
           <div className='mt-8 flex justify-between'>
-            <div className='flex rounded border border-gray-100'>
-              <button className='inline-flex size-10 items-center justify-center border-e text-gray-600 transition hover:bg-gray-50 hover:text-gray-700'>
+            <div className='flex h-10 rounded border border-gray-100'>
+              <button
+                onClick={() => {
+                  toggle === 'grid' ? setToggle('grid') : setToggle('grid');
+                }}
+                className={`inline-flex size-10 ${
+                  toggle === 'grid' ? 'bg-[#f4f7ff]' : ''
+                } items-center justify-center border-e text-gray-600 transition `}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -40,7 +47,13 @@ const StartLearning = () => {
                 </svg>
               </button>
 
-              <button className='inline-flex size-10 items-center justify-center text-gray-600 transition hover:bg-gray-50 hover:text-gray-700'>
+              <button
+                onClick={() => {
+                  toggle !== 'grid' ? setToggle('line') : setToggle('line');
+                }}
+                className={`inline-flex size-10 items-center justify-center ${
+                  toggle === 'line' ? 'bg-[#f4f7ff]' : ''
+                } transition `}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -87,9 +100,11 @@ const StartLearning = () => {
             langSelector === 'spanish' ? 'lg:h-[36rem] overflow-auto' : ''
           }`}>
           <div
-            className={`${
-              langSelector === 'spanish' ? 'grid' : 'flex'
-            } grid-cols-2 md:grid-cols-2 justify-center lg:grid-cols-3 gap-5`}>
+            className={`${langSelector === 'spanish' ? 'grid' : 'flex'} ${
+              toggle === 'grid'
+                ? 'grid-cols-2 md:grid-cols-2 lg:grid-cols-3'
+                : 'grid-cols-1'
+            } justify-center gap-5`}>
             {langSelector === 'spanish' ? (
               lessons.slice(0, 10).map((lesson) => (
                 <NavLink
@@ -114,7 +129,10 @@ const StartLearning = () => {
                   </div>
 
                   <dl className='mt-6 justify-between flex gap-4 sm:gap-6'>
-                    <div className=' hidden md:flex flex-col-reverse'>
+                    <div
+                      className={` ${
+                        toggle === 'grid' ? 'hidden' : ''
+                      } md:flex flex-col-reverse`}>
                       <dt className='text-sm font-medium text-gray-600'>
                         Vocabularies
                       </dt>
@@ -137,8 +155,8 @@ const StartLearning = () => {
             ) : (
               <div className='mt-10'>
                 <img
-                  className='w-[100px] mx-auto lg:w-[300px]'
-                  src='/Assets/Error.png'
+                  className='w-[200px] rounded-2xl mx-auto lg:w-[300px]'
+                  src='https://img.freepik.com/premium-vector/window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.jpg'
                   alt=''
                 />
                 <p className='text-center my-10 font-semibold text-xl md:text-2xl'>

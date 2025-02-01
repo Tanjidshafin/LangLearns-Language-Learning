@@ -11,15 +11,16 @@ const Navbar = () => {
       await signOut(auth);
       setUser(null);
     } catch (error) {
-      console.error('Error signing out:', error);
+      console.error(error);
     }
   };
+
   return (
     <header className='bg-white'>
       <div className='mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex gap-1 items-center'>
           <img
-            className='w-12 '
+            className='w-9 hidden md:flex rounded-full bg-transparent '
             src='https://w7.pngwing.com/pngs/280/358/png-transparent-ahhaa-logo-service-business-cold-icon-hand-service-room.png'
             alt=''
           />
@@ -33,8 +34,10 @@ const Navbar = () => {
                 <NavLink
                   to='/'
                   className={({ isActive }) =>
-                    `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-black'
+                    `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      isActive
+                        ? 'before:w-full text-[#3B9DF8]'
+                        : ' text-gray-500'
                     }`
                   }>
                   Home
@@ -44,8 +47,10 @@ const Navbar = () => {
                 <NavLink
                   to='/StartLearning'
                   className={({ isActive }) =>
-                    `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-black'
+                    `before:w-0 hover:before:w-full  before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      isActive
+                        ? 'before:w-full text-[#3B9DF8]'
+                        : 'text-gray-500'
                     }`
                   }>
                   Start Learning
@@ -55,8 +60,10 @@ const Navbar = () => {
                 <NavLink
                   to='/Tutorials'
                   className={({ isActive }) =>
-                    `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-black'
+                    `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      isActive
+                        ? 'before:w-full text-[#3B9DF8]'
+                        : ' text-gray-500'
                     }`
                   }>
                   Tutorials
@@ -65,22 +72,10 @@ const Navbar = () => {
 
               <li>
                 <NavLink
-                  to='/AboutUS'
-                  className={({ isActive }) =>
-                    `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-black'
-                    }`
-                  }>
-                  About Us
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink
                   to='/MyProfile'
                   className={({ isActive }) =>
-                    `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-black'
+                    `before:w-0 hover:before:w-full  before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      isActive ? 'before:w-full text-[#3B9DF8]' : 'text-gray-500'
                     } ${user ? '' : 'hidden'}`
                   }>
                   My Profile
@@ -90,27 +85,29 @@ const Navbar = () => {
           </nav>
 
           <div className='flex items-center gap-4'>
-            <div className='sm:flex items-center sm:gap-4'>
+            <div className='flex items-center gap-2'>
               {user ? (
                 <>
-                  <span className='text-gray-700 hidden lg:flex'>
+                  <span className='text-gray-700 hidden md:flex'>
                     Welcome,{' '}
-                    <span className='font-semibold'>{user.displayName}</span>
+                    <span className='font-semibold'>
+                      {user.displayName === null ? ' User' : user.displayName}
+                    </span>
                   </span>
-                  <NavLink to="/MyProfile">
+                  <NavLink to='/MyProfile'>
                     <img
-                      className='rounded-full hidden md:flex w-[3rem]'
+                      className='rounded-full h-[2.5rem] object-cover w-[2.5rem]'
                       src={
-                        user.photoUrl
-                          ? user.photoUrl
-                          : 'https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1725655669.jpg'
+                        user.photoURL === null
+                          ? 'https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1725655669.jpg'
+                          : user.photoURL
                       }
                       alt=''
                     />
                   </NavLink>
                   <button
                     onClick={handleLogout}
-                    className='btn text-white font-semibold w-20 bg-red-600'>
+                    className='btn hidden md:flex text-white font-semibold w-20 bg-red-600'>
                     Logout
                   </button>
                 </>
@@ -146,10 +143,10 @@ const Navbar = () => {
                   <NavLink
                     to='/'
                     className={({ isActive }) =>
-                      `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      `before:w-0 hover:before:w-full  before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
                         isActive
                           ? 'bg-[#389DF8] text-white font-semibold'
-                          : 'text-black'
+                          : 'text-gray-500'
                       }`
                     }>
                     Home
@@ -159,10 +156,10 @@ const Navbar = () => {
                   <NavLink
                     to='/StartLearning'
                     className={({ isActive }) =>
-                      `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
                         isActive
                           ? 'bg-[#389DF8] text-white font-semibold'
-                          : 'text-black'
+                          : 'text-gray-500'
                       }`
                     }>
                     Start Learning
@@ -172,10 +169,10 @@ const Navbar = () => {
                   <NavLink
                     to='/Tutorials'
                     className={({ isActive }) =>
-                      `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
                         isActive
                           ? 'bg-[#389DF8] text-white font-semibold'
-                          : 'text-black'
+                          : 'text-gray-500'
                       }`
                     }>
                     Tutorials
@@ -184,29 +181,29 @@ const Navbar = () => {
 
                 <li>
                   <NavLink
-                    to='/AboutUS'
-                    className={({ isActive }) =>
-                      `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
-                        isActive
-                          ? 'bg-[#389DF8] text-white font-semibold'
-                          : 'text-black'
-                      }`
-                    }>
-                    About Us
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
                     to='/MyProfile'
                     className={({ isActive }) =>
-                      `before:w-0 hover:before:w-full text-gray-500 before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                      `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
                         isActive
                           ? 'bg-[#389DF8] text-white font-semibold'
-                          : 'text-black'
+                          : 'text-gray-500'
                       } ${user ? '' : 'hidden'}`
                     }>
                     My Profile
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/Login'
+                    onClick={handleLogout}
+                    className={({ isActive }) =>
+                      `before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize ${
+                        isActive
+                          ? 'bg-[#389DF8] text-white font-semibold'
+                          : 'text-gray-500'
+                      } ${user ? '' : 'hidden'}`
+                    }>
+                    Log out
                   </NavLink>
                 </li>
               </ul>

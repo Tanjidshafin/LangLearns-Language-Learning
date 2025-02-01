@@ -52,7 +52,7 @@ const Tutorials = () => {
               src={`${video.video}?autoplay=1&mute=1`}
               title='YouTube video player'
               frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen'
               referrerpolicy='strict-origin-when-cross-origin'
               allowfullscreen></iframe>
             <div className='relative bg-white pt-3'>
@@ -64,7 +64,9 @@ const Tutorials = () => {
         ))}
       </div>
       <div className='text-center md:text-end mt-5'>
-        <NavLink to="/StartLearning" className="btn bg-[#2C6E49] text-white">Learn Vocabularies</NavLink>
+        <NavLink to='/StartLearning' className='btn bg-[#2C6E49] text-white'>
+          Learn Vocabularies
+        </NavLink>
       </div>
     </div>
   );

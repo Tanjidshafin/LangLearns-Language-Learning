@@ -78,19 +78,16 @@ const EachLesson = () => {
               onClick={() => pronounceWord(leson.word)}
               key={leson.word}
               className='hover:animate-background rounded-xl bg-gradient-to-r from-[#2C6E49] via-[#9E2B25] to-[#A0D2DB] p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]'>
-              <div
-                className={`rounded-[10px] h-[15rem] p-4 sm:p-6 ${
-                  leson.difficulty === 'Easy'
-                    ? 'bg-emerald-200'
-                    : leson.difficulty === 'Medium'
-                    ? 'bg-amber-200'
-                    : 'bg-red-300'
-                }`}>
-                <a href='#'>
+              <div className='rounded-[10px] bg-white h-[15rem] p-4 sm:p-6'>
+                <div className='flex justify-between items-center '>
                   <h3 className='mt-0.5 mb-5 text-lg font-semibold text-gray-900'>
                     {leson.word}
                   </h3>
-                </a>
+                  <img className='w-12'
+                    src='https://www.pngitem.com/pimgs/m/505-5054502_spain-fifa-logo-spain-flag-logo-circle-hd.png'
+                    alt=''
+                  />
+                </div>
                 <p className='mt-1 text-xs font-medium '>
                   Pronunciation:
                   <span className='text-gray-600'> {leson.pronunciation}</span>
@@ -145,17 +142,17 @@ const EachLesson = () => {
             onClick={() => setOpenModal(false)}
             className={`fixed z-[100] w-screen ${
               openModal ? 'visible opacity-100' : 'invisible opacity-0'
-            } inset-0 grid place-items-center bg-black/20 backdrop-blur-sm duration-100 dark:bg-transparent`}>
+            } inset-0 grid place-items-center bg-black/20 backdrop-blur-sm duration-100`}>
             <div
               onClick={(e_) => e_.stopPropagation()}
-              className={`absolute max-w-md rounded-lg bg-white p-6 drop-shadow-lg dark:bg-zinc-900 dark:text-white ${
+              className={`absolute max-w-md rounded-lg bg-white p-6 drop-shadow-lg ${
                 openModal
                   ? 'opacity-1 duration-300'
                   : 'scale-110 opacity-0 duration-150'
               }`}>
               <svg
                 onClick={() => setOpenModal(false)}
-                className='absolute right-3 top-3 w-6 cursor-pointer fill-zinc-600 dark:fill-white'
+                className='absolute right-3 top-3 w-6 cursor-pointer fill-zinc-600'
                 viewBox='0 0 24 24'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'>

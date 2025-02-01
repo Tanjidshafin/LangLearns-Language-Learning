@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Tutorial = () => {
   return (
@@ -24,11 +24,13 @@ const Tutorial = () => {
           src='https://www.youtube.com/embed/hyLl_0d0EBw?si=vvoDRtzHaPz8p0Qq'
           title='YouTube video player'
           frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allow='accelerometer; autoplay; clipboard-write;fullscreen; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerpolicy='strict-origin-when-cross-origin'
           allowfullscreen></iframe>
         <div className='text-center md:text-end mt-5'>
-          <NavLink to="/Tutorials" className='relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group'>
+          <NavLink
+            to='/Tutorials'
+            className='relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-primary transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group'>
             <span className='absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full'></span>
             <span className='absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12'>
               <svg

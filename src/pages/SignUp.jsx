@@ -1,6 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  updateProfile,
+} from 'firebase/auth';
 import { auth, provider } from '../firebase.init';
 import { AppContext } from '../context/AppContext';
 import { toast } from 'react-toastify';
@@ -12,7 +16,7 @@ const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirmation, setPasswordConfirmation] = useState('');
-  const [name, setName] = useState('');
+
   const [error, setError] = useState('');
   const isValidPassword = (password) => {
     const hasUpperCase = /[A-Z]/.test(password);
@@ -36,18 +40,23 @@ const SignUp = () => {
       );
       return;
     }
-    setName(firstName + lastName);
+
+    const fullName = `${firstName} ${lastName}`;
 
     try {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
-        password,
-        name
+        password
       );
       const user = userCredential.user;
-      toast.success(`Welcome , User`);
-      setUser(user);
+
+      await updateProfile(user, {
+        displayName: fullName,
+      });
+
+      toast.success(`Welcome, ${fullName}`);
+      setUser({ ...user, displayName: fullName });
       navigate('/');
     } catch (error) {
       console.error(error);
@@ -103,7 +112,7 @@ const SignUp = () => {
               <div className='relative -mt-16 block lg:hidden'>
                 <a className='inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20'>
                   <img
-                    className='rounded-full'
+                    className='rounded-full w-16'
                     src='https://w7.pngwing.com/pngs/280/358/png-transparent-ahhaa-logo-service-business-cold-icon-hand-service-room.png'
                     alt=''
                   />
