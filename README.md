@@ -93,13 +93,15 @@ npm start
 </details>
 
 
-<div align="center">
-## 🌟 Join the LangLearn Community! 🌟
+<div align="center">  
+ 
+## 🌟 Join the LangLearn Community! 🌟  
 
-| Contribute | Stay Connected |
-|:---:|:---:|
-| [![Contribute](https://img.shields.io/badge/🛠️%20Contribute-Join%20Us-blueviolet?style=for-the-badge)](CONTRIBUTING.md) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanjid-karim-shafin-835365249/) |
-| Help us grow! | Let's connect! |
+| Contribute | Stay Connected |  
+|:---:|:---:|  
+| [![Contribute](https://img.shields.io/badge/🛠️%20Contribute-Join%20Us-blueviolet?style=for-the-badge)](CONTRIBUTING.md) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanjid-karim-shafin-835365249/) |  
+
+Help us grow! | Let's connect!  
 
 </div>
 
