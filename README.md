@@ -27,7 +27,7 @@
 
 ## 🚀 Features that Make Learning a Breeze
 
-<table>
+<table align="center">
   <tr>
     <td align="center"><img src="https://img.shields.io/badge/📚-Spanish%20Lessons-FFA000?style=for-the-badge"/></td>
     <td align="center"><img src="https://img.shields.io/badge/🎨-Interactive%20Animations-9C27B0?style=for-the-badge"/></td>
