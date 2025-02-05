@@ -86,32 +86,10 @@ npm install
 npm start
 ```
 
-4️⃣ **Voila! Visit [http://localhost:3000/](http://localhost:3000/) and start learning!** 🎉
+4️⃣ ** Visit [http://localhost:3000/](http://localhost:3000/) and start learning!** 🎉
 
 </details>---
 
-## 🤝 Join the LangLearns Community
-
-<div align="center">| Contribute | Stay Connected
-|-----|-----
-| [
-
-](CONTRIBUTING.md) | [
-
-](https://www.linkedin.com/in/tanjid-karim-shafin-835365249/)
-| Help us grow! | Let's connect!
-
-
-</div>---
-
-<div align="center">## 🌟 Start Your Spanish Journey Now! 🌟
-
-[
-
-](https://langlearns.netlify.app/)
-
-</div>---
-
-`<div align="center">
+<div align="center">
   <img src="https://img.shields.io/badge/Made%20with%20❤️%20by-Tanjid%20Karim%20Shafin-red?style=for-the-badge" alt="Made with love">
 </div>
