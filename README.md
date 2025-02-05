@@ -89,6 +89,28 @@ npm start
 4️⃣ ** Visit [http://localhost:3000/](http://localhost:3000/) and start learning!** 🎉
 
 </details>---
+## 🤝 Join the LangLearns Community
+
+<div align="center">
+
+| Contribute | Stay Connected |
+|:---:|:---:|
+| [![Contribute](https://img.shields.io/badge/🛠️%20Contribute-Join%20Us-blueviolet?style=for-the-badge)](CONTRIBUTING.md) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanjid-karim-shafin-835365249/) |
+| Help us grow! | Let's connect! |
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌟 Start Your Spanish Journey Now! 🌟
+
+[![Get Started](https://img.shields.io/badge/🚀%20Get%20Started-LangLearns-00C7B7?style=for-the-badge)](https://langlearns.netlify.app/)
+
+</div>
+
+---
 
 <div align="center">
   <img src="https://img.shields.io/badge/Made%20with%20❤️%20by-Tanjid%20Karim%20Shafin-red?style=for-the-badge" alt="Made with love">
