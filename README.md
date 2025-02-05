@@ -91,7 +91,7 @@ npm start
 4️⃣  Visit [http://localhost:3000/](http://localhost:3000/) and start learning! 🎉
 
 </details>
-## 🤝 Join the LangLearns Community
+## 🌟 Join the LangLearn Community! 🌟
 
 <div align="center">
 
