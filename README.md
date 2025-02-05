@@ -88,9 +88,9 @@ npm install
 npm start
 ```
 
-4️⃣ ** Visit [http://localhost:3000/](http://localhost:3000/) and start learning!** 🎉
+4️⃣  Visit [http://localhost:3000/](http://localhost:3000/) and start learning! 🎉
 
-</details>---
+</details>
 ## 🤝 Join the LangLearns Community
 
 <div align="center">
