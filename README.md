@@ -1,6 +1,5 @@
-
 <div align="center">
-  <img src="https://i.ibb.co.com/hFVGB3Gn/Screenshot-2025-02-01-202515.png" alt="LangLearns Banner" width="100%"/>
+  <img src="https://i.ibb.co/hFVGB3Gn/Screenshot-2025-02-01-202515.png" alt="LangLearns Banner" width="100%"/>
 
   <h1>🎓🌎 LangLearns</h1>
   <p><em>Embark on an Interactive Spanish Learning Adventure!</em></p>
@@ -89,11 +88,11 @@ npm start
 
 4️⃣ **Voila! Visit [http://localhost:3000/](http://localhost:3000/) and start learning!** 🎉
 
-`</details>`---
+</details>---
 
 ## 🤝 Join the LangLearns Community
 
-`<div align="center">`| Contribute | Stay Connected
+<div align="center">| Contribute | Stay Connected
 |-----|-----
 | [
 
@@ -103,15 +102,15 @@ npm start
 | Help us grow! | Let's connect!
 
 
-`</div>`---
+</div>---
 
-`<div align="center">`## 🌟 Start Your Spanish Journey Now! 🌟
+<div align="center">## 🌟 Start Your Spanish Journey Now! 🌟
 
 [
 
 ](https://langlearns.netlify.app/)
 
-`</div>`---
+</div>---
 
 `<div align="center">
   <img src="https://img.shields.io/badge/Made%20with%20❤️%20by-Tanjid%20Karim%20Shafin-red?style=for-the-badge" alt="Made with love">
