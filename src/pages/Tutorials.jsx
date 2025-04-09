@@ -72,11 +72,11 @@ const Tutorials = () => {
   ];
 
   return (
-    <div className='relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8'>
+    <div className='relative mx-auto max-w-screen-xl px-2  sm:px-6 lg:px-8 py-8'>
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-72 h-72 bg-emerald-50 rounded-full -z-10 blur-3xl opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-emerald-50 rounded-full -z-10 blur-3xl opacity-70"></div>
-      
+
       <div className="relative">
         {/* Enhanced Header Section */}
         <div className="text-center mb-12">
@@ -84,7 +84,7 @@ const Tutorials = () => {
             Master Vocabulary Effortlessly
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mt-3 mx-auto"></div>
-          
+
           <p className='mt-6 text-gray-600 max-w-3xl mx-auto leading-relaxed'>
             Learn language vocabulary effortlessly with our interactive tutorial
             videos! Discover practical tips and engaging techniques to expand your
@@ -96,7 +96,7 @@ const Tutorials = () => {
         {/* Featured Video Banner */}
         {selectedVideo ? (
           <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 bg-black">
-            <button 
+            <button
               onClick={() => setSelectedVideo(null)}
               className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
             >
@@ -115,7 +115,7 @@ const Tutorials = () => {
               ></iframe>
             </div>
             <div className="bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h2 className="text-xl font-bold mb-2">{selectedVideo.title}</h2>
+              <h2 className="text-md md:text-xl font-bold mb-2">{selectedVideo.title}</h2>
               <div className="flex items-center gap-4 text-sm">
                 <span className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -139,15 +139,15 @@ const Tutorials = () => {
         ) : (
           <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/90 to-teal-600/90 z-10"></div>
-            <img 
-              src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="Language Learning" 
+            <img
+              src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Language Learning"
               className="w-full h-64 md:h-80 object-cover"
             />
             <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-white p-6 text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Interactive Spanish Tutorials</h2>
               <p className="max-w-2xl mb-6">Watch our carefully crafted video lessons to master Spanish vocabulary and grammar concepts</p>
-              <button 
+              <button
                 onClick={() => setSelectedVideo(videos[0])}
                 className="px-6 py-3 bg-white text-emerald-600 font-medium rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center"
               >
@@ -168,18 +168,16 @@ const Tutorials = () => {
         ) : (
           <>
             {/* Video Grid */}
-            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${
-              animateCards ? 'opacity-100' : 'opacity-0'
-            } transition-opacity duration-500`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${animateCards ? 'opacity-100' : 'opacity-0'
+              } transition-opacity duration-500`}>
               {videos.map((video, index) => (
                 <div
                   key={video.id}
-                  className={`transform transition-all duration-500 ${
-                    animateCards ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                  }`}
+                  className={`transform transition-all duration-500 ${animateCards ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                    }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
-                  <div 
+                  <div
                     className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white cursor-pointer"
                     onClick={() => setSelectedVideo(video)}
                   >
@@ -193,7 +191,7 @@ const Tutorials = () => {
                           </svg>
                         </div>
                       </div>
-                      <img 
+                      <img
                         src={`https://img.youtube.com/vi/${video.video.split('/').pop().split('?')[0]}/hqdefault.jpg`}
                         alt={video.title}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -202,18 +200,18 @@ const Tutorials = () => {
                         {video.duration}
                       </div>
                     </div>
-                    
+
                     {/* Video info */}
                     <div className="p-4">
                       <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors line-clamp-2 mb-2">
                         {video.title}
                       </h3>
-                      
+
                       <div className="flex justify-between items-center">
                         <span className="inline-block px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">
                           {video.level}
                         </span>
-                        
+
                         <span className="text-xs text-gray-500 flex items-center">
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
@@ -234,9 +232,9 @@ const Tutorials = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Ready to practice what you've learned?</h3>
                 <p className="text-gray-600">Apply your knowledge with our interactive vocabulary exercises.</p>
               </div>
-              
-              <NavLink 
-                to="/StartLearning" 
+
+              <NavLink
+                to="/StartLearning"
                 className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center whitespace-nowrap"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">

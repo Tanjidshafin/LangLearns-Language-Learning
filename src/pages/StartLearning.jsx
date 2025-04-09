@@ -57,7 +57,7 @@ const StartLearning = () => {
   }
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
+    <div className="mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-8 py-10">
       {/* Hero Section */}
       <div className="relative mb-16 rounded-3xl bg-gradient-to-r from-green-50 via-teal-50 to-cyan-50 p-8 shadow-lg overflow-hidden">
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
