@@ -32,7 +32,7 @@ const Slider = () => {
 
   return (
     <div className='relative'>
-      <div className='h-60 w-full md:h-[470px] lg:mt-24 md:rounded-2xl mt-10 lg:h-[540px] mx-auto max-w-screen-xl relative overflow-hidden'>
+      <div className='h-60 w-full md:h-[470px] lg:mt-24  mt-10 lg:h-[540px] mx-auto max-w-screen-xl relative overflow-hidden'>
         <button
           onClick={prevSlider}
           className='absolute top-1/2 left-3 z-50 flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8'>
@@ -69,43 +69,72 @@ const Slider = () => {
           ))}
         </div>
       </div>
-      <div className='lg:absolute mx-4 bg-white lg:top-1/2 gap-4 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-36 flex flex-col md:flex-col lg:flex-row p-6 rounded-2xl items-center '>
-        <div className='divider'></div>
-        <img
-          className='w-[30rem] object-cover h-[300px] basis-1/2'
-          src='https://images.shiksha.com/mediadata/images/articles/1593692498phpqoP7Fd.jpeg'
-          alt=''
-        />
-        <div className='basis-1/2'>
-          <p className='font-semibold max-w-[20rem] mx-auto text-gray-700 text-xl text-center '>
-            The Free, fun, and effective way to learn a language!
-          </p>
+     {/* Enhanced CTA Box */}
+     <div className="lg:absolute mx-4 bg-white lg:top-1/2 gap-6 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-36 flex flex-col md:flex-col lg:flex-row p-8 rounded-2xl items-center shadow-xl border border-gray-100">
+        <div className="relative basis-1/2 overflow-hidden rounded-xl">
+          {/* Decorative elements */}
+          <div className="absolute -top-10 -left-10 w-20 h-20 bg-gradient-to-br from-emerald-300 to-emerald-500 rounded-full opacity-20"></div>
+          <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-gradient-to-br from-emerald-300 to-emerald-500 rounded-full opacity-20"></div>
+          
+          <img
+            className="w-full object-cover h-[300px] rounded-xl transform transition-transform duration-700 hover:scale-105"
+            src="https://images.shiksha.com/mediadata/images/articles/1593692498phpqoP7Fd.jpeg"
+            alt="Language Learning"
+          />
+          
+          {/* Language bubbles decoration */}
+          <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-emerald-700">English</div>
+          <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-emerald-700">Spanish</div>
+          <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-emerald-700">French</div>
+          <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-emerald-700">Japanese</div>
+        </div>
+        
+        <div className="basis-1/2">
+          <h2 className="font-bold max-w-[24rem] mx-auto text-gray-800 text-2xl text-center leading-tight">
+            The <span className="text-emerald-600">Free, Fun, and Effective</span> Way to Learn a Language!
+          </h2>
+          
           {user ? (
-            <div>
-              <p className='text-center text-gray-500 my-3'>
+            <div className="mt-6">
+              <p className="text-center text-gray-600 my-4 max-w-md mx-auto">
                 Welcome to our language-learning app! Unlock vocabulary,
                 practice skills, and master new languages in a fun, interactive
-                environment
+                environment.
               </p>
-              <div className='flex justify-center gap-5'>
-                <NavLink to="/StartLearning" className="btn w-[10rem] bg-[#2C6E49] text-white hover:bg-white hover:text-[#2C6E49] ">Start Learning </NavLink>
-                <NavLink to="/Tutorials" className="btn w-[10rem] bg-[#2C6E49] text-white hover:bg-white hover:text-[#2C6E49]">Tutorials</NavLink>
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                <NavLink 
+                  to="/StartLearning" 
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-medium text-center shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 transform hover:-translate-y-1">
+                  Start Learning
+                </NavLink>
+                <NavLink 
+                  to="/Tutorials" 
+                  className="px-6 py-3 rounded-full bg-white border border-emerald-500 text-emerald-600 font-medium text-center shadow-lg hover:bg-emerald-50 transition-all duration-300 transform hover:-translate-y-1">
+                  View Tutorials
+                </NavLink>
               </div>
             </div>
           ) : (
-            <div className='flex gap-2 mt-3 flex-col'>
+            <div className="flex gap-4 mt-6 flex-col">
               <NavLink
-                to='/Signup'
-                className='btn mx-auto shadow-md w-[18rem]  bg-[#2C6E49]  text-white'>
+                to="/Signup"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-medium text-center shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 transform hover:-translate-y-1 mx-auto w-[18rem]">
                 Get Started
               </NavLink>
               <NavLink
-                to='/Login'
-                className='btn shadow-md mx-auto w-[18rem] text-[#2C6E49]'>
+                to="/Login"
+                className="px-6 py-3 rounded-full bg-white border border-emerald-500 text-emerald-600 font-medium text-center shadow-md hover:bg-emerald-50 transition-all duration-300 transform hover:-translate-y-1 mx-auto w-[18rem]">
                 Already Have Account?
               </NavLink>
             </div>
           )}
+          
+          {/* Language level indicators */}
+          <div className="flex justify-center gap-2 mt-6">
+            <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-md">Beginner</span>
+            <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-md">Intermediate</span>
+            <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-md">Advanced</span>
+          </div>
         </div>
       </div>
     </div>
