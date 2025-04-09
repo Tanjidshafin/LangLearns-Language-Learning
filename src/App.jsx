@@ -27,38 +27,40 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/StartLearning' element={<StartLearning />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Signup' element={<SignUp />} />
-        <Route
-          path='/Lesson/:lessonNo'
-          element={
-            <PrivateRoute>
-              <EachLesson />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/Tutorials'
-          element={
-            <PrivateRoute>
-              <Tutorials />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/MyProfile'
-          element={
-            <PrivateRoute>
-              <MyProfile />
-            </PrivateRoute>
-          }
-        />
-        <Route path='/AboutUs' element={<AboutUs />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
+      <div className='mt-28'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/StartLearning' element={<StartLearning />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Signup' element={<SignUp />} />
+          <Route
+            path='/Lesson/:lessonNo'
+            element={
+              <PrivateRoute>
+                <EachLesson />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='/Tutorials'
+            element={
+              <PrivateRoute>
+                <Tutorials />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='/MyProfile'
+            element={
+              <PrivateRoute>
+                <MyProfile />
+              </PrivateRoute>
+            }
+          />
+          <Route path='/AboutUs' element={<AboutUs />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   );

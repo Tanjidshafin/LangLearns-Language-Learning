@@ -70,7 +70,7 @@ const Slider = () => {
         </div>
       </div>
      {/* Enhanced CTA Box */}
-     <div className="lg:absolute mx-4 bg-white lg:top-1/2 gap-6 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-36 flex flex-col md:flex-col lg:flex-row p-8 rounded-2xl items-center shadow-xl border border-gray-100">
+     <div className="lg:absolute mx-4 bg-white lg:top-1/2 gap-6 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-36 flex flex-col md:flex-col lg:flex-row p-3 md:p-8 rounded-2xl items-center shadow-xl border border-gray-100">
         <div className="relative basis-1/2 overflow-hidden rounded-xl">
           {/* Decorative elements */}
           <div className="absolute -top-10 -left-10 w-20 h-20 bg-gradient-to-br from-emerald-300 to-emerald-500 rounded-full opacity-20"></div>
